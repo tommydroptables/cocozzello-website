@@ -1,0 +1,149 @@
+#leftSide, h1,  h3, #links, header, body, p, ul {
+				margin: 0 0 0 0;
+				padding: 0 0 0 0;
+			}
+
+			#datBody {
+				padding: 10% 15% 0% 15%;
+				display: inline-block;
+			}
+			#datBodyRightSide {
+				vertical-align: top;
+				width: 51%;
+				float: right;
+				line-height: 3.5em;
+				color: #606060;
+			}
+			
+			#datBodyLeftSide {
+				width: 45%;
+				float: left;
+				vertical-align: top;
+				display: inline-block;
+			}	
+
+			.color {
+				z-index: 1;
+				height: 130px;
+				width: 130px;
+				border-radius: 65px;
+				text-align: center;
+				line-height: 130px;
+				float: left;
+				color: #FFF;
+				font-family: 'Lato',serif;
+			}
+			#face {
+				height: 355px;
+				border-radius: 177.5px;
+				float: right;
+			}
+			.color:hover{
+				color: #CCCCCC;
+				opacity: 0.4;
+				cursor: pointer;
+			}
+			/*#hello, #aboutMe	{
+				font-family: 'Noticia Text';
+			}*/
+
+			#hello {
+				font-weight: bold;
+				font-size: 3.5em;
+			}
+
+			#aboutMe {
+				font-size: 2em;
+			}
+			#meParagraph {
+				padding-top: 2em;
+				padding-bottom: 2em; 
+				width: 100%;
+				display: inline-block;
+				text-align:  left;	
+				line-height: normal;
+				word-wrap: break-word;
+			}
+			#blockQuot {
+				line-height: 1;
+			}
+
+		@media (max-width: 1260px) {
+		    #datBody {
+				padding: 10% 10% 0% 10%;
+			}
+		}
+		@media  (max-width: 1100px) {
+		    #datBody {
+				padding: 10% 5% 0% 5%;
+			}
+		}
+
+		@media (max-width: 900px) {
+		    #face {
+				padding-top: 4%;
+			}
+		}
+
+		@media (min-width: 1015px) {
+			#datBodyLeftSide {
+				float: left;
+			}
+			
+		}
+
+		@media (max-width: 1300px) {
+
+			#datBodyLeftSide {
+				float: none;
+				width: 100%;
+			}
+			#face {
+				height:  auto;
+				float: none;
+				display: block;
+				margin: auto;
+			}
+			#datBodyRightSide {
+				float: none;
+				width:  100%;
+				text-align: center;
+			}
+			#datBodyRightSide p {
+			}
+			.bodyRightSide br{
+				display: none;
+			}
+			.color {
+				display: inline-block;
+				float: none;
+			}
+		}
+
+
+
+		@media only screen (max-device-width: 1080px) {
+		    #datBody {
+				padding: 5em 5% 0% 5%;
+			}
+			#face {
+				height: 250px;
+			}
+		}
+		@media (max-width: 370px) {
+		    #activities_head {
+		    	font-size: 2em;
+		    }
+		}
+
+		@media (min-device-width: 1600px) {
+		    #datBody {
+				padding: 10% 20% 2% 20%;
+			}
+		}
+
+	
+
+		
+	
+		

@@ -1,0 +1,118 @@
+	/*@font-face {
+		font-family: "BebasNeue";
+		src: url("../font/BebasNeue Bold.otf") format("opentype");
+	}
+
+	@font-face {
+	font-family: "BebasNeueLight";
+	src: url("../font/BebasNeue Light.otf") format("opentype");
+	}
+	*/
+	
+	#resume {
+		/*font-family: 'BebasNeue';*/
+		padding-top: 4em;
+	}
+
+	#resume_title_container {
+		text-align: center;
+	}
+
+	#resume_title hr {
+		margin-top: -.1em;
+	}
+
+	#resume_title {
+		display: inline-block;
+		padding-top: 1em;
+		/*font-family: 'Noticia Text';*/
+		font-size: 5em;
+		color: #606060;
+		margin-bottom: -.5em;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.education {
+		padding: 4% 20% 2% 20%;
+		color: #505050;
+	}
+	.resume_head {
+		font-size: 2em;
+		font-weight: bold;
+		border-bottom: 1px solid #dfdfdf;
+	}
+
+	.resume_head img {
+		float: left;
+
+	}
+	.resume_head ul {
+		display: block;
+	}
+	.resume_head li {
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+
+	.resume_table {
+		padding-top: 1.5em;
+		width: 100%;
+		font-size: 1em;
+		padding-left: 2.8em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.resume_table_leftside {
+		width: 20%;
+		vertical-align: top;
+
+	}
+	.resume_table_rightside {
+		width: 80%;
+		font-weight: bold;
+	}
+
+	.resume_table_rightside ul {
+		list-style-type:  circle;
+	}
+
+	.resume_table_rightside a {
+		color: #1976D2;
+		text-decoration: none;
+	}
+
+	.resume_table_rightside p {
+		font-weight: lighter;
+	}
+
+	.resume_table_rightside a:hover {
+		color: #505050;
+	}
+
+	@media (max-device-width: 1080px) {
+	    .education {
+			padding: 2% .5% 2% .5%;
+		}
+	}
+
+	/*
+	So resume looks good at half screen
+	*/
+	@media (max-width: 775px) {
+		.education {
+			padding: 2% 2% 2% 2%;
+		}
+	}
+
+	@media (min-width: 1350px) {
+	    .education {
+			padding: 4% 25% 2% 25%;
+		}
+	}
+
+
+
+	

@@ -1,0 +1,94 @@
+.wrapper{
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+#download_icon,#download_icon:visited,#download_icon:hover,#download_icon:active{
+  
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:#1976D2;
+  font-size:2.5em
+}
+#download_icon:hover{
+  color:#d73444;
+}
+#download_icon.before:before,#download_icon.after:after{
+  content: "";
+  transition:0.5s all ease;
+  
+  position:absolute;
+}
+#download_icon.before:before{
+  top:-0.25em;
+}
+#download_icon.after:after{
+  bottom:-0.25em;
+}
+#download_icon.before:before,#download_icon.after:after{
+  height:5px;
+  height:0.2rem;
+  width:0;
+  background:#d73444;
+}
+
+#download_icon.before:hover:before,#download_icon.after:hover:after{
+  width:100%;
+}
+
+.square{
+  box-sizing:border-box;
+  margin-left:-0.4em;
+  position:relative;
+  font-size: 1em;
+  overflow:hidden;
+}
+.square #download_icon{
+  position:static;
+  font-size:100%;
+  padding:0.2em 0.4em;
+}
+.square:before,.square:after{
+  content: "";
+  box-sizing:border-box;
+  transition:0.25s all ease;
+  
+  position:absolute;
+  width:5px;
+  width:0.2rem;
+  height:0;
+  background:#d73444;
+}
+.square:before{
+  left:0;
+  bottom:-0.2em;
+}
+.square.individual:before{
+  transition-delay:0.6s;
+}
+.square:after{
+  right:0;
+  top:-0.2em;
+}
+.square.individual:after{
+  transition-delay:0.2s;
+}
+.square #download_icon:before{
+  left:0;
+  transition:0.25s all ease;
+}
+.square #download_icon:after{
+  right:0;
+  transition:0.25s all ease;
+}
+.square.individual #download_icon:after{
+  transition:0.25s all ease 0.4s;
+}
+.square:hover:before,.square:hover:after{
+  height:130%;
+}
+.square:hover #download_icon:before,.square:hover #download_icon:after{
+  width:100%;
+}
