@@ -39,8 +39,9 @@
 				float: right;
 			}
 			.color:hover{
-				color: #CCCCCC;
-				opacity: 0.4;
+
+				color:	#dfdfdf;
+				opacity: 0.8;
 				cursor: pointer;
 			}
 			/*#hello, #aboutMe	{
@@ -66,6 +67,11 @@
 			}
 			#blockQuot {
 				line-height: 1;
+			}
+			#easterEag {
+				text-decoration:  none;
+				color: inherit;
+				cursor: text;
 			}
 
 		@media (max-width: 1260px) {

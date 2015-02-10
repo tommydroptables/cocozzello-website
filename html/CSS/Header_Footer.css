@@ -44,6 +44,10 @@
 
 			}
 
+			#contact_button:focus {
+				background-color: #EEEEEE;
+			}
+
 
 			#rightSide {
 				float: right;

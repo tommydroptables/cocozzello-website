@@ -8,10 +8,8 @@
 
 			if (hidden == 0 &&  $('body').width() > 390) 
 				$("#header_top_button").show();
-				
 			else
 				$("#header_top_button").hide();
-			
 		});
 
 
@@ -41,7 +39,7 @@
 		    $("#resume_button").click(function() {
 		    	var emSize = parseFloat($("body").css("font-size"));
 			    $('html, body').animate({
-			        scrollTop: $("#resume_title").offset().top + (emSize * 2)
+			        scrollTop: $("#resume_title").offset().top - (emSize * 1)
 			    }, 500);
 			    return false;
 			});
@@ -61,13 +59,14 @@
 				}
 				else
 				{
-					if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
-					{ 
-						size = $("#projects").offset().top - (emSize * 4);
-						console.log("1: " + size);
-					}		
+						
 					size = $("#projects").offset().top - (emSize * 2);
 					console.log("2: " + size);
+					if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+					{ 
+						size = $("#projects").offset().top - (emSize * 4);
+						console.log("3: " + size);
+					}	
 				}
 			    $('html, body').animate({
 			        scrollTop: size
@@ -91,6 +90,11 @@
 				{
 					size = $("#activities").offset().top - (emSize * 2);
 					console.log("2: " + size);
+					if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+					{ 
+						size = $("#activities").offset().top - (emSize * 4);
+						console.log("3: " + size);
+					}	
 				}
 			    $('html, body').animate({
 			        scrollTop: size
@@ -105,11 +109,24 @@
 		    $("#resume_button2").click(function() {
 		    	var emSize = parseFloat($("body").css("font-size"));
 			    $('html, body').animate({
-			        scrollTop: $("#resume_title").offset().top + (emSize * 2)
+			        scrollTop: $("#resume_title").offset().top - (emSize * 1)
 			    }, 500);
 			    return false;
 			});
 		});
+
+
+
+
+		$(function(){
+			$("#contact_button").click(function() {
+				document.getElementById('foot').style.removeProperty("transition");
+			    document.getElementById('foot').style.removeProperty("backgroundColor");
+				document.getElementById('foot').style["backgroundColor"] = "#EEEEEE";
+				console.log("test");
+			});
+		});
+
 
 		// move user to the Contact section
 		$(function(){
@@ -118,6 +135,12 @@
 			    $('html, body').animate({
 			        scrollTop: $("footer").offset().top + (emSize * 2)
 			    }, 500);
+			    document.getElementById('foot').style.removeProperty("backgroundColor");
+			    document.getElementById('foot').style["transition"] = "background-color 2s ease";
+			    document.getElementById('foot').style["backgroundColor"] = "#0D47A1";
+			    
+
+			    console.log("2");
 			    return false;
 			});
 		});
