@@ -68,11 +68,7 @@
 			#blockQuot {
 				line-height: 1;
 			}
-			#easterEag {
-				text-decoration:  none;
-				color: inherit;
-				cursor: text;
-			}
+			
 
 		@media (max-width: 1260px) {
 		    #datBody {

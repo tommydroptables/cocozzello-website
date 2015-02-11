@@ -74,6 +74,11 @@
 		width: 80%;
 		font-weight: bold;
 	}
+	#easterEag {
+		text-decoration:  none;
+		color: inherit;
+		cursor: text;
+	}
 
 	.resume_table_rightside ul {
 		list-style-type:  circle;
