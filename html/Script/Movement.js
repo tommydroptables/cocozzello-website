@@ -122,7 +122,7 @@
 			$("#contact_button").click(function() {
 				document.getElementById('foot').style.removeProperty("transition");
 			    document.getElementById('foot').style.removeProperty("backgroundColor");
-				document.getElementById('foot').style["backgroundColor"] = "#EEEEEE";
+			    document.getElementById('foot').style["backgroundColor"] = "#EEEEEE";
 				console.log("test");
 			});
 		});
@@ -136,7 +136,7 @@
 			        scrollTop: $("footer").offset().top + (emSize * 2)
 			    }, 500);
 			    document.getElementById('foot').style.removeProperty("backgroundColor");
-			    document.getElementById('foot').style["transition"] = "background-color 2s ease";
+			    document.getElementById('foot').style["transition"] = "background-color 3s .2s ease";
 			    document.getElementById('foot').style["backgroundColor"] = "#0D47A1";
 			    
 
