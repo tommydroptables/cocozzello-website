@@ -82,8 +82,8 @@
 		}
 
 		@media (max-width: 900px) {
-		    #face {
-				padding-top: 4%;
+		    #datBodyLeftSide {
+				padding-top: 5%;
 			}
 		}
 
@@ -124,7 +124,7 @@
 
 
 
-		@media only screen (max-device-width: 1080px) {
+		@media (max-device-width: 1080px) {
 		    #datBody {
 				padding: 5em 5% 0% 5%;
 			}
@@ -132,6 +132,7 @@
 				height: 250px;
 			}
 		}
+
 		@media (max-width: 370px) {
 		    #activities_head {
 		    	font-size: 2em;

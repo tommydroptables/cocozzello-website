@@ -22,7 +22,7 @@
 
 		  	table +=
 		  		"<table class='resume_table'>"
-					+ "<tr> "
+					+ "<tr>"
 						+ "<td class='resume_table_leftside'>"
 						+ responseObj[i].created_at.substring(0, 4)
 						+ " - "
@@ -41,11 +41,10 @@
 		  }
 
 		  table += "<table class='resume_table'>"
-					+ "<tr> "
+					+ "<tr>"
 						+ "<td class='resume_table_leftside'>"
 						+ "</td>"
 						+ "<td class='resume_table_rightside'>"
-							+ " <a href= ''></a>" 
 						+ "</td>"
 					+ "</tr>"
 				+ "</table>";
