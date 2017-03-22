@@ -1,0 +1,42 @@
+body{
+	font-size: 100%;
+	padding: 2em 15% 2em 15%;
+	font-family: serif;
+
+}
+ table,h1, h2, ul, tr, td, ol, li, p {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#name {
+	text-align: center;
+}
+table{
+	width: 100%;
+}
+.tableLeftRight tr + td {
+	text-align: left;
+}
+.tableLeftRight tr td + td {
+	text-align: right;
+}
+h2{
+	padding: .3em 0em 0em 0em;
+	text-align: left;
+	font-size: 1em;
+	border-bottom: 1px solid;
+	text-transform: uppercase;
+}
+ul{
+	padding-left: 1em;
+}
+.subHeader{
+	font-style: italic;
+}
+@media (max-width: 200px){
+	body{ padding: 2em 5em 2em 5em;}
+}
+ul.activities {
+	width: 50%;
+ 	display: inline-block;
+}
