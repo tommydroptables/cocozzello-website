@@ -11,6 +11,16 @@ b: build
 build:
 	docker build -t $(ProjectName):$(Version) .
 
+	cd nginx && docker build -t nginx-$(ProjectName):$(Version) .
+
+p: push
+push:
+	docker tag $(ProjectName):$(Version) cocozzello/$(ProjectName):$(Version)
+	docker push cocozzello/$(ProjectName):$(Version)
+
+	docker tag nginx-$(ProjectName):$(Version) cocozzello/nginx-$(ProjectName):$(Version)
+	docker push cocozzello/nginx-$(ProjectName):$(Version)
+
 c: clean
 clean:
 	# Kill off any running containers
@@ -19,7 +29,7 @@ clean:
 
 r: run
 run: build clean
-	docker run -d -p 80:80 $(ProjectName):$(Version)
+	docker run -d -p 8080:80 $(ProjectName):$(Version)
 
 	# Open the website if we are on MacOS
-	[ $(UNAME) == Darwin ]  && open http://0.0.0.0:80
+	[ $(UNAME) == Darwin ]  && open http://0.0.0.0:8080
