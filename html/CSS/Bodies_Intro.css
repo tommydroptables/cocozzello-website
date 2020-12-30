@@ -14,14 +14,12 @@
 				line-height: 3.5em;
 				color: #606060;
 			}
-			
 			#datBodyLeftSide {
 				width: 45%;
 				float: left;
 				vertical-align: top;
 				display: inline-block;
-			}	
-
+			}
 			.color {
 				z-index: 1;
 				height: 130px;
@@ -58,17 +56,17 @@
 			}
 			#meParagraph {
 				padding-top: 2em;
-				padding-bottom: 2em; 
+				padding-bottom: 2em;
 				width: 100%;
 				display: inline-block;
-				text-align:  left;	
+				text-align:  left;
 				line-height: normal;
 				word-wrap: break-word;
 			}
 			#blockQuot {
 				line-height: 1;
 			}
-			
+
 
 		@media (max-width: 1260px) {
 		    #datBody {
@@ -91,7 +89,7 @@
 			#datBodyLeftSide {
 				float: left;
 			}
-			
+
 		}
 
 		@media (max-width: 1300px) {
@@ -101,7 +99,7 @@
 				width: 100%;
 			}
 			#face {
-				height:  auto;
+				height: 250px;
 				float: none;
 				display: block;
 				margin: auto;
@@ -144,9 +142,3 @@
 				padding: 10% 20% 2% 20%;
 			}
 		}
-
-	
-
-		
-	
-		

@@ -25,11 +25,11 @@ c: clean
 clean:
 	# Kill off any running containers
 	#      the double dollar is the makefile syntax to have the dollar apear in the recipe
-	docker ps | grep $(ProjectName) | awk '{ print $$1 }' | xargs -r -I{} bash -c 'docker stop {} && docker rm {}'
+	docker rm -f $(ProjectName) | true
 
 r: run
 run: build clean
-	docker run -d -p 8080:80 $(ProjectName):$(Version)
+	docker run --name $(ProjectName) -d -p 8080:80 $(ProjectName):$(Version)
 
 	# Open the website if we are on MacOS
 	[ $(UNAME) == Darwin ]  && open http://0.0.0.0:8080
