@@ -14,7 +14,7 @@ build:
 	cd nginx && docker build -t nginx-$(ProjectName):$(Version) .
 
 p: push
-push:
+push: build
 	docker tag $(ProjectName):$(Version) cocozzello/$(ProjectName):$(Version)
 	docker push cocozzello/$(ProjectName):$(Version)
 
