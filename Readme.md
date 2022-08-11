@@ -8,3 +8,15 @@ This repo hosts my personal websites
 ```
 make run
 ```
+
+
+## Release
+1. Update the `Version` file
+```
+# Build
+make build
+# Test locally
+make run
+# Publish
+make push
+```
